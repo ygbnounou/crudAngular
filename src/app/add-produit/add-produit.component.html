@@ -1,0 +1,32 @@
+<div class="container">
+  <div>
+    <h2>Ajouter un Produit</h2>
+  </div>
+  <form>
+    <div class="col-sm-2 col-md-2 col-lg-2">
+      <label for="idproduit">ID Produit</label>
+      <input type="text" name="idproduit" id="idproduit" 
+              [(ngModel)]="newProduit.idProduit" class="form-control">
+    </div>
+    <div class="col-sm-4 col-md-4 col-lg-4">
+      <label for="nomproduit">Nom Produit</label>
+      <input type="text" name="nomproduit" id="nomproduit" 
+              [(ngModel)]="newProduit.nomProduit" class="form-control">
+    </div>
+    <div class="col-sm-2 col-md-2 col-lg-2">
+      <label for="prixproduit">Prix Produit</label>
+      <input type="number" name="prixproduit" id="prixproduit" 
+              [(ngModel)]="newProduit.prixProduit" class="form-control">
+    </div>
+    <div class="col-sm-4 col-md-4 col-lg-4">
+      <label for="dateproduit">Date Création</label>
+      <input type="date" name="dateproduit" id="dateproduit" 
+              [(ngModel)]="newProduit.dateCreation" class="form-control">
+    </div>
+
+    <div class="mt-2">
+      <button type="submit" (click)="addProduit()" 
+              class="btn- btn-success">Ajouter</button>
+    </div>
+  </form>
+</div>
